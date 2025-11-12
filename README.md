@@ -12,7 +12,7 @@
 - Сценарии и вспомогательные файлы:
   - `start_backend.bat` / `start_backend.sh` — запуск бэкенда
   - `start_frontend.bat` / `start_frontend.sh` — запуск фронтенда
-  - `windows_installation.bat`, `macos_dabian_installation.sh`, `COMMANDS.md` — вспомогательные инсталляционные скрипты/инструкции
+  - `windows_installation.bat`, `COMMANDS.md` — вспомогательные инсталляционные скрипты/инструкции
 
 ## Что внутри
 - Бэкенд реализован с помощью Django REST Framework. Аутентификация — token-based (DRF Token).
