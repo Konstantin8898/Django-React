@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark theme variables used across the app */
+:root {
+  --bg: #0b1220; /* page background */
+  --surface: #071026; /* header / surface */
+  --text: #e6eef6; /* main text */
+  --muted: #9fb7c9; /* secondary text */
+  --accent: #58d6ff; /* brand accent */
+  --avatar-bg: #0f2430;
+  --avatar-fg: #58d6ff;
+  --card-bg: #0f1720;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

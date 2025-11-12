@@ -1,0 +1,61 @@
+.main-toolbar {
+  max-width: 700px;
+  margin: 20px auto 20px;
+  width: 100%;
+}
+
+.main-toolbar .ant-btn {
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  transition: background 0.2s, color 0.2s;
+}
+
+.main-toolbar .ant-btn-primary {
+  background: var(--accent) !important;
+  color: var(--surface) !important;
+  border: none !important;
+}
+
+.main-toolbar .ant-btn-primary:hover, .main-toolbar .ant-btn-primary:focus {
+  background: var(--surface) !important;
+  color: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
+}
+
+.main-toolbar .ant-btn:hover, .main-toolbar .ant-btn:focus {
+  background: var(--accent) !important;
+  color: var(--surface) !important;
+}
+
+/* Dropdown стили, как в header */
+.dropdown-custom-menu .ant-dropdown-menu {
+  background: var(--surface) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.45);
+  border: 1px solid var(--accent);
+  margin-left: 5px;
+  margin-top: 0;
+}
+
+.dropdown-custom-menu .ant-dropdown-menu-item,
+.dropdown-custom-menu .ant-dropdown-menu-title-content,
+.dropdown-custom-menu .ant-dropdown-menu-item-group-title {
+  color: var(--muted) !important;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-custom-menu .ant-dropdown-menu-item .anticon,
+.dropdown-custom-menu .ant-dropdown-menu-title-content .anticon {
+  color: var(--muted) !important;
+  font-size: 17px;
+  margin-right: 7px;
+  vertical-align: middle;
+}

@@ -1,0 +1,94 @@
+.main-header {
+  background: var(--surface);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.main-header-title {
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 !important;
+  margin-left: 20px !important;
+  font-size: 28px !important;
+  font-weight: 500 !important;
+  color: var(--accent) !important;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', sans-serif !important;
+  text-rendering: optimizeLegibility;
+}
+
+.main-header-app-icon {
+  color: var(--accent);
+  margin-right: 4px;
+  vertical-align: middle;
+  width: 36px;
+  height: 36px;
+}
+
+.main-header-user {
+  background: var(--avatar-bg);
+  color: var(--avatar-fg);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.04);
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.main-header-down {
+  color: var(--muted);
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+.dropdown-custom-menu .ant-dropdown-menu {
+  background: var(--surface) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.45);
+  border: 1px solid var(--accent);
+  margin-top: 5px;
+}
+
+.dropdown-profile-menu {
+  min-width: 180px;
+  padding: 8px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.dropdown-profile-name {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.dropdown-logout-btn {
+  background: var(--card-bg) !important;
+  color: var(--text) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--accent) !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  margin-top: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-logout-btn:hover, .dropdown-logout-btn:focus {
+  background: var(--accent) !important;
+  color: var(--surface) !important;
+}

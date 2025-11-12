@@ -1,0 +1,259 @@
+.post-card {
+	background: var(--card-bg);
+	border-radius: 16px;
+	box-shadow: 0 4px 24px rgba(0,0,0,0.45);
+	border: 1px solid var(--surface);
+	color: var(--text);
+	margin: 20px auto 24px;
+	max-width: 700px;
+	width: 100%;
+	padding: 20px;
+	position: relative;
+	transition: box-shadow 0.2s, border 0.2s;
+  box-shadow: 0 8px 16px rgba(60, 148, 177, 0.18);
+	border-color: var(--accent);
+}
+
+.post-title {
+	font-weight: 600;
+	font-size: 19px;
+	margin-bottom: 6px;
+	color: var(--accent);
+	word-break: break-word;
+	white-space: pre-wrap;
+}
+.post-info {
+	margin-bottom: 12px;
+	color: var(--muted);
+	word-break: break-word;
+	white-space: pre-wrap;
+}
+
+.post-meta {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+
+  .post-date {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .post-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 18px;
+
+    span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .unclickable {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      height: 32px;
+      padding: 0px 15px;
+    }
+
+    .clickable {
+      display: flex;
+      align-items: center;
+      background: transparent var(--muted);
+    }
+  }
+}
+
+.post-comments {
+  border-top: 1px solid rgba(0,0,0,0.04);
+  margin-top: 12px;
+}
+
+.post-comments .comment {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(88, 212, 255, 0.2);
+}
+
+.post-comments .comment:last-child {
+  border-bottom: none; 
+}
+
+.post-comments .comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.post-comments .comment-author {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.post-comments .comment-text {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.post-comments .comment-date {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.post-comments .comments-toggle {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.post-comments .comment-input-row {
+  margin-top: 10px;
+}
+
+/* Modal styling for create/edit post */
+.post-modal .ant-modal-content {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-radius: 12px !important;
+  border: 1px solid var(--accent) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.28) !important;
+}
+
+.post-modal .ant-modal-header {
+  border-bottom: none !important;
+  background: transparent !important;
+  padding: 20px 24px 0 24px !important;
+}
+
+.post-modal .ant-modal-title {
+  color: var(--accent) !important;
+  font-weight: 700 !important;
+}
+
+.post-modal .ant-modal-close {
+  color: var(--muted) !important;
+}
+
+.post-modal .ant-form-item-label > label {
+  color: var(--muted) !important;
+  font-weight: 600;
+}
+
+.post-modal .ant-form-item-control-input {
+  margin-top: 6px;
+}
+
+.post-modal .ant-btn {
+  border-radius: 8px !important;
+  font-weight: 600;
+}
+
+.post-modal .ant-btn-primary {
+  background: var(--accent) !important;
+  color: var(--surface) !important;
+  border: none !important;
+}
+
+.post-modal .ant-btn-primary:hover, .post-modal .ant-btn-primary:focus {
+  background: var(--surface) !important;
+  color: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
+}
+
+.post-modal .ant-upload .ant-btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--text);
+}
+
+/* Delete confirmation modal styling */
+.post-delete-confirm .ant-modal-content {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(250,173,20,0.15) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.28) !important;
+}
+
+.post-delete-confirm .ant-modal-confirm-body-wrapper {
+  padding: 0 !important;
+}
+
+.post-delete-confirm .ant-modal-confirm-title {
+  font-size: 18px !important;
+  color: var(--accent) !important;
+  text-align: center;
+  font-weight: 700;
+}
+
+.post-delete-confirm .ant-modal-confirm-content {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+.post-delete-confirm .ant-modal-confirm-btns {
+  display: flex !important;
+  gap: 12px;
+  justify-content: center;
+  padding: 0;
+}
+
+.post-delete-confirm .ant-btn {
+  border-radius: 8px !important;
+}
+
+.post-delete-confirm .ant-btn-danger {
+  background: #ff4d4f !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.post-delete-confirm .ant-btn-danger:hover, .post-delete-confirm .ant-btn-danger:focus {
+  background: #fff !important;
+  color: #ff4d4f !important;
+  border: 1px solid #ff4d4f !important;
+}
+
+/* Styled scrollbar for posts list */
+.posts-wrapper {
+  /* ensure scrollbar appears on the element itself */
+  overflow-y: auto;
+}
+
+.posts-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+.posts-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.posts-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(60,148,177,0.18), rgba(60,148,177,0.32));
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.posts-wrapper:hover::-webkit-scrollbar-thumb {
+  background: var(--accent);
+}
+
+/* Firefox */
+.posts-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
